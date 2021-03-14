@@ -7,7 +7,7 @@ const currentTime = getTime(currentHour);
 let currentRoutineAM = [];
 let currentRoutinePM = [];
 
-function getTime (now) { //consider using switch/case
+function getTime (now) {
 	if (now > 12) {
 		now -= 12;
 		if (now < 1) {
@@ -218,7 +218,7 @@ currentRoutinePM = twelvesArrPM.concat(currentRoutinePM);
 let finishedAMArr = [];
 let finishedPMArr = [];
 
-function prettier (arr) { //possibly rewrite using switch/case.
+function prettier (arr) {
 	for (let i in arr) {
 		arr[i].HR = arr[i].HR.toString(); 
 		if (arr[i].HR.length == 1) {
@@ -248,8 +248,6 @@ let finishedArr =
 (finishedAMArr).concat
 (['-------------------------PM-----------------------------']).concat
 (finishedPMArr);
-
-//let currentRoutine = currentRoutineAM.concat(currentRoutinePM);
 
 console.log(finishedArr);
 
