@@ -203,6 +203,9 @@ function twelveFirst(arr) {
 			twelvesArrPM.push(arr[i]);
 			arr.pop();
 		}
+		if (arr[i].HR == undefined) {
+			break;
+		}
 	}
 }
 
